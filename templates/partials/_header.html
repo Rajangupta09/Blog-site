@@ -1,0 +1,75 @@
+{% load static %}
+	<!-- Header -->
+	<header class="nav nav--always-fixed" itemtype="index.html" itemscope>
+
+		<div class="nav__holder nav--sticky nav--align-center">
+			<div class="container-fluid container-semi-fluid container" style="padding-top: 20px;">
+				<div class="flex-parent">
+
+					<div class="nav__header clearfix">
+						<!-- Logo -->
+						<div class="logo-wrap local-scroll">
+							<a href="{% url 'index' %}" class="logo__url">
+								<img src="{% static 'img/jd/logo1.png' %}" alt="logo" >
+							</a>
+						</div>
+
+						<button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="nav__icon-toggle-bar"></span>
+							<span class="nav__icon-toggle-bar"></span>
+							<span class="nav__icon-toggle-bar"></span>
+						</button>
+					</div>
+					<nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse" >              
+						<ul class="nav__menu local-scroll" id="onepage-nav">
+							<li>
+                                <a href="{% url 'index' %}" 
+                               {% if '' in request.path %}
+                                class="nav-link active" 
+                                {% else %}
+                                class="nav-link"
+                                {% endif %}
+                                aria-haspopup="true">Home</a>
+								
+							</li>
+							<li>
+								<a href="#about" class="nav-link">About Us</a>
+							</li> 
+							<li class="nav__dropdown">
+								<a href="#" class="nav-link" aria-haspopup="true">Projects</a>
+								<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+								<ul class="nav__dropdown-menu">
+									<li>
+										<a href="projects.html">
+											<span class="nav__dropdown-menu-label">Project 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="single-project.html">
+											<span class="nav__dropdown-menu-label">Project 2</span>
+										</a>
+									</li>
+								</ul>
+							</li>            
+							<li>
+                                <a href="{% url 'blog' %}"
+                                {% if 'blog' in request.path %}
+                                class="nav-link active" 
+                                {% else %}
+                                class="nav-link"
+                                {% endif %}
+                                >Blog</a>
+							</li>
+						
+							<li>
+								<a href="#contact" class="nav-link">Contact Us</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+    </header>	
+    

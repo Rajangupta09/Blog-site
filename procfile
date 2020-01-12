@@ -1,0 +1,1 @@
+web: gunicorn jdmr.wsgi --log-file

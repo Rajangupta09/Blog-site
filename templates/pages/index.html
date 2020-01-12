@@ -1,0 +1,354 @@
+	{% extends 'base.html' %}
+	{% load static %}
+	{% block title %} | Home {% endblock %}
+	{% block content %}
+	<main class="main-wrap">
+		<div class="content-wrap">
+			<section class="p-0"> 
+			
+				<div class="rev_slider_wrapper">
+					<div class="rev_slider" id="slider1" data-version="5.0">
+						<div class="waveWrapper waveAnimation">
+						<div class="waveWrapperInner bgTop">
+						<div class="wave waveTop" style='background-image: url("../static/img/jd/wave-top.png")'></div>
+						</div>
+						<div class="waveWrapperInner bgMiddle">
+						<div class="wave waveMiddle" style="background-image: url('../static/img/jd/wave-mid.png')"></div>
+						</div>
+						<div class="waveWrapperInner bgBottom">
+						<div class="wave waveBottom" style="background-image: url('../static/img/jd/wave-bot.png')"></div>
+						</div>
+						</div>
+					
+						<ul>
+							<li>	
+								<div class="container">
+									<div class="contain">
+										<div class="row">
+											<div class="col-3">
+												<div class="card">
+													<div class="face face1">
+														<div class="content">
+															<img src="{% static 'img/jd/des.png'%}">
+															<h3>Design</h3>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-3  offset-lg-1">
+										<div class="card card-1">
+											<div class="face face1">
+												<div class="content">
+													<img src="{% static 'img/jd/des.png'%}">
+													<h3>Design</h3>
+												</div>
+											</div>					
+										</div>
+										</div>
+										<div class="col-3 offset-lg-1">
+										<div class="card">
+											<div class="face face1">
+												<div class="content">
+													<img src="{% static 'img/jd/des.png'%}">
+													<h3>Design</h3>
+												</div>
+											</div>								
+										</div>
+										</div>
+									</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+			</section>
+			<section id="services" class="pb-72">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="title-row animate">
+								<div class="animate-container">
+									<h2 class="text-center section-title">Why Us</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="title-row animate">
+								<div class="animate-container">
+									<h3 class="section-subtitle section-subtitle--line">Our Services</h3>
+									<h2 class="section-title">Objectives</h2>
+									<p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum fuga nemo, 
+										nulla amet tempore magni alias odio repellendus.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 offset-lg-1">
+							<div class="animate">
+								<div class="animate-container">
+									<div class="row">
+										<div class="col-lg-6">							
+											<div class="service">
+												<i class="service__icon o-edit-window-1"></i>
+												<h4 class="service__title">Design</h4>
+												<p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ipsa.</p>
+											</div>								
+										</div>
+										<div class="col-lg-6">
+											<div class="service">
+												<i class="service__icon o-source-code-1"></i>
+												<h4 class="service__title">Design</h4>
+												<p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ipsa.</p>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="service">
+												<i class="service__icon o-call-contact-1"></i>
+												<h4 class="service__title">Design</h4>
+												<p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ipsa.</p>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="service">
+												<i class="service__icon o-strategy-1"></i>
+												<h4 class="service__title">Design</h4>
+												<p class="service__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ipsa.</p>
+											</div>
+										</div>
+									</div>
+										</div>
+									</div>
+						</div>
+					</div>
+				</div>
+			</section> 
+					
+		
+			<section class="section-about" id="about">
+						<div class="about">        
+							<div class="about__holder">
+								<div class="about__info">
+									<div class="animate">
+										<div class="animate-container"> 
+											<div class="title-row mb-40">
+												<h3 class="section-subtitle section-subtitle--line">About</h3>
+												<h2 class="section-title">Lorem ipsum dolor sit amet consectetur </h2>
+												<p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas beata</p>
+											</div>
+		
+											<!-- Accordion -->
+											<div id="accordion-1">
+		
+												<div class="accordion">
+													<div class="accordion__panel">
+														<div class="accordion__heading" id="heading-1">
+															<a data-toggle="collapse" href="#collapse-1" class="accordion__link accordion--is-open" aria-expanded="true" aria-controls="collapse-1">
+																<span class="accordion__toggle"></span>
+																<h4 class="accordion__title">Who we are</h4>                        
+															</a>
+														</div>
+														<div id="collapse-1" class="collapse show" data-parent="#accordion-1" role="tabpanel" aria-labelledby="heading-1">
+															<div class="accordion__body">
+																<p>
+																	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, dolores debitis dolorum consectetur error excepturi sint maiores quas, rerum minima fuga quaerat, cupiditate nobis blanditiis perferendis optio labore deserunt doloribus?
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+		
+												<div class="accordion">
+													<div class="accordion__panel">
+														<div class="accordion__heading" id="heading-2">
+															<a data-toggle="collapse" href="#collapse-2" class="accordion__link" aria-expanded="true" aria-controls="collapse-2">                        
+																<span class="accordion__toggle"></span>
+																<h4 class="accordion__title">Our philosophy</h4>
+															</a>
+														</div>
+														<div id="collapse-2" class="collapse" data-parent="#accordion-1" role="tabpanel" aria-labelledby="heading-2">
+															<div class="accordion__body">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis nemo ipsa modi eveniet aliquid deleniti laboriosam cupiditate, magni alias voluptatibus? Neque blanditiis quod pariatur doloremque aliquam aperiam sunt consequuntur.														</p>
+															</div>
+														</div>
+													</div>
+												</div>
+		
+												<div class="accordion">
+													<div class="accordion__panel">
+														<div class="accordion__heading" id="heading-3">
+															<a data-toggle="collapse" href="#collapse-3" class="accordion__link" aria-expanded="true" aria-controls="collapse-3">                        
+																<span class="accordion__toggle"></span>
+																<h4 class="accordion__title">How we work</h4>
+															</a>
+														</div>
+														<div id="collapse-3" class="collapse" data-parent="#accordion-1" role="tabpanel" aria-labelledby="heading-3">
+															<div class="accordion__body">
+																<p>
+																	Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero quaerat, aut doloremque necessitatibus recusandae, voluptas fuga repudiandae laborum non molestiae ea! Reprehenderit qui quisquam sequi maiores in tempora eos.
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+		
+											</div> 
+		
+										</div>
+									</div>
+								</div> 
+		
+							</div>
+						</div>
+			</section>
+		
+			<section class="section-team">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4">
+									<div class="title-row">
+										<h3 class="section-subtitle section-subtitle--line">Meet Our Team</h3>
+										<h2 class="section-title">A Team Of
+										Passionate People</h2>
+									</div>
+								</div>
+								<div class="col-lg-6 offset-lg-2">
+									<p class="section-description mt-32">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quod recusandae necessitatibus sit iure quos fugiat perspiciatis fuga maxime quam natus, magnam tempore assumenda enim ut neque omnis corporis commodi?</p>
+								</div>
+							</div>
+		
+							<div class="row">
+								<div class="col-lg-3 col-sm-8 offset-1">
+									<div class="animate">
+										<div class="animate-container">
+											<div class="team">
+												<img src="{% static 'img/team/team_1.jpg'%}" alt="team 1" class="team__img">
+												<h4 class="team__name">jack</h4>
+												<span class="team__position">CEO / Founder</span>
+												<div class="socials socials--rounded mt-16">
+													<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+													<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+													<a href="#" class="social social-google-plus" aria-label="linkedin" title="linkedin" target="_blank"><i class="ui-linkedin"></i></a>
+												</div>
+											</div>  
+										</div>
+									</div>          
+								</div>
+								<div class="col-lg-3  col-sm-8  offset-1">
+									<div class="animate">
+										<div class="animate-container">
+											<div class="team">
+												<img src="{% static 'img/team/team_2.jpg'%}" alt="team 2" class="team__img">
+												<h4 class="team__name"> Kent</h4>
+												<span class="team__position">Designer</span>
+												<div class="socials socials--rounded mt-16">
+													<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+													<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+													<a href="#" class="social social-google-plus" aria-label="linkedin" title="linkedin" target="_blank"><i class="ui-linkedin"></i></a>
+												</div>
+											</div>
+										</div>  
+									</div>         
+								</div>
+								<div class="col-lg-3   col-sm-8 offset-1">
+									<div class="animate">
+										<div class="animate-container">
+											<div class="team">
+												<img src="{% static 'img/team/team_3.jpg'%}" alt="team 3" class="team__img">
+												<h4 class="team__name"> Green</h4>
+												<span class="team__position">Project Manager</span>
+												<div class="socials socials--rounded mt-16">
+													<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+													<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+													<a href="#" class="social social-google-plus" aria-label="linkedin" title="linkedin" target="_blank"><i class="ui-linkedin"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>          
+								</div>
+							</div>
+		
+						</div>
+			</section>
+		
+			<section class="section-contact" id="contact">
+			
+				<h2 class="text-center section-title">Contact Us</h2>
+				{% if messages %}
+				<div class="messages">
+				  {% for message in messages %}
+				  <div class="{{ message.tags }}">{{ message }}</div>
+				  <br />
+				  {% endfor %}
+			  </div>
+			  <script>
+				var m = document.getElementsByClassName("messages");  
+				
+				setTimeout(function(){
+				   if (m && m.length) {
+					   m[0].classList.add('hide');
+				   }
+				}, 3000);
+				</script>
+			  {% endif %}
+					<div class="row">
+						<div class="col-lg-3 col-sm-12 col-xs-10 offset-1">
+							<h3 class="section-subtitle section-subtitle--line">Contact us</h3>
+							<p class="section-description"><span><i class="medium material-icons">call</i></span>&nbsp;&nbsp;+91-1234567890</p>
+							<p class="section-description"><span><i class="material-icons">email</i></span>&nbsp;&nbsp;example@gmail.com</p>
+							<p class="section-description"><span><i class="medium material-icons">location_on</i></span>&nbsp;&nbsp;New Delhi, India</p>
+						</div>
+		
+						<div class="col-lg-6 col-sm-10 offset-1" style="border-left: 2px solid #000;">
+							<form class="contact-form" action="{% url 'contact'%}" method="POST" >
+								{% csrf_token %}
+								<div class="row row-16">
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="name">Name<abbr>*</abbr></label>
+											<input type="text" name="Name" id="Name" required="">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="form-group">
+											<label for="phone">Phone No.<abbr>*</abbr></label>
+											<input type="phone" name="Phone" id="phone" required="">
+										</div>
+									</div>
+								</div>	
+									<div class="row">
+										<div class="col-lg-12">
+											<div class="form-group">
+												<label for="email">Email<abbr>*</abbr></label>
+												<input type="email" name="Email" id="email" required="">
+											</div>
+										</div>
+									</div>	
+										<label for="message">Message<abbr>*</abbr></label>
+										<textarea name="Message" id="message" rows="6"></textarea>              
+									<div class="gdpr-checkbox">
+										<label class="gdpr-checkbox__label">
+											<input class="gdpr-checkbox__input" name="AGREE_TO_TERMS" type="checkbox" value="1" required="">
+											<span class="gdpr-checkbox__text">I agree to storage of my email according to <a href="#" target="_blank">Privacy Policy</a>
+											</span>
+										</label>
+									</div>
+								<div class="text-center">
+									<input id="contact-form__submit" action=" {% url 'contact'%}"type="submit" class="btn btn--lg btn--color" value="Send Message">
+								</div>									
+								<div  class="contact-form__message" role="alert"></div>		
+							</form>
+						</div>
+				</section>
+		
+
+
+
+
+
+		</div> 
+		</main>
+		
+{% endblock %}

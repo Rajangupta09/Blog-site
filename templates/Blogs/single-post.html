@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} | {{post.title}} {% endblock %}
+{% block content %}
+	<main class="main-wrap">
+		<div class="content-wrap">
+
+			
+			<section class="blog-page-title bg-overlay bg-overlay--light-68" style="background-image: url(../static/img/blog/single/image.jpg);">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="blog-page-title__holder">
+								<span class="entry__meta-category">
+									<a href="#" class="entry__meta-category-url">{{post.Type}}</a>
+								</span>
+								<h1 class="blog-page-title__title">{{post.title}}</h1>
+								<div class="entry__meta">							
+									<span class="entry__meta-item entry__meta-author">
+										<span>by</span>
+										<a href="#" class="entry__meta-author-url">
+											<span class="entry__meta-author-name" itemprop="author">{{ post.author }}</span>
+										</a>
+									</span>
+									<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">{{post.blog_date}}</span>
+								</div>
+							</div>						
+						</div>						
+					</div>
+				</div>
+			</section> 
+
+			<section class="section-blog-single angle angle--top pb-96">
+				<div class="container">
+					<div class="row justify-content-center">
+
+						<div class="col-lg-8 blog__content mb-32">
+							<article class="entry single-post__entry">
+								<div class="entry__article-wrap">
+
+									<div class="entry__share">
+										<div class="sticky-col">
+											<div class="socials socials--rounded socials--large socials--colored entry__share-socials">
+												<a class="social social-facebook entry__share-social"
+													href="#" target="_blank"><i class="ui-facebook"></i>
+												</a>
+												<a class="social social-twitter entry__share-social"
+													href="#" target="_blank"><i class="ui-twitter"></i>
+												</a>
+												<a class="social social-linkedin entry__share-social"
+													href="#" target="_blank"><i class="ui-linkedin"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="entry__article">
+										<p>{{ post.content }}</p>
+										<ul class="wp-block-gallery columns-3 is-cropped">
+											<li class="blocks-gallery-item">
+												<figure>
+													<img src="{{ post.photo_blog.url }}" alt="">
+													<figcaption>caption</figcaption>
+												</figure>
+											</li>
+											<li class="blocks-gallery-item">
+												<figure>
+													<img src="{{ post.photo_blog.url }}" alt="">
+													<figcaption>caption</figcaption>
+												</figure>
+											</li>
+											<li class="blocks-gallery-item">
+												<figure>
+													<img src="{{ post.photo_blog.url }}" alt="">
+													<figcaption>caption</figcaption>
+												</figure>
+											</li>
+										</ul>
+
+									</div>
+
+								</div>
+							</article>
+
+							<div class="entry__tags disabled">
+								<a href="#" rel="tag">#tags</a>
+								<a href="#" rel="tag">#tags</a>			
+							</div>
+
+					</div>
+				</div>
+			</section>
+			</div>
+		</div> 
+	{% endblock %}

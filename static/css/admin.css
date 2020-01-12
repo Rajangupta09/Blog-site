@@ -1,0 +1,11 @@
+#header{
+    background: #27273C;
+}
+div.breadcrumbs{
+    background: rgb(60, 151, 136);
+}
+
+.module h2, .module caption, .inline-group h2{
+
+    background: rgb(60, 151, 136);
+}

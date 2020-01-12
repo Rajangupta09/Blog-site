@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% block title %} | Blogs {% endblock %}
+{% block content %}
+	<main class="main-wrap">
+		<div class="content-wrap">
+
+			<!-- Page Title -->
+			<section class="page-title bg-pattern">
+				<div class="container relative">
+					<h1 class="page-title__title white">Our Insights</h1>
+					<p class="page-title__subtitle">The latest studio news, work and insights.</p>
+				</div>
+			</section> <!-- end page title -->
+
+			<!-- Blog -->
+			<section class="section-blog">
+				<div class="container">
+					<div class="row">
+						{% if b %}
+							{% for blog in b %}
+							
+							
+							<div class="col-lg-4">
+								<div class="animate">
+									<div class="animate-container">
+										<article class="entry">
+											<div class="entry__header hover-shrink">
+												<a href="{% url 'blogs' blog.id %}" class="entry__img-url hover-shrink--shrink">
+													<img src="{{ blog.photo_blog.url }}" class="entry__img hover-shrink--zoom" itemprop="image" alt="">
+												</a>
+											</div>
+											<div class="entry__body">
+												<div class="entry__meta">
+													<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">{{ blog.blog_date }}</span>
+													<span class="entry__meta-item entry__meta-category">
+														<span>in </span>
+														<a href="#" class="entry__meta-category-url">{{ blog.Type }}</a>
+													</span>                  
+												</div>                
+												<h4 class="entry__title title-underline">
+													<a href="#" itemprop="headline">{{ blog.title }}</a>
+												</h4>
+												<div class="entry__meta">
+													<span class="entry__meta-item entry__meta-author">
+														<span>by</span>
+														<a href="#" class="entry__meta-author-url">
+															<span class="entry__meta-author-name" itemprop="author">{{ blog.author }}</span>
+														</a>
+													</span>
+												</div>                 
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							
+
+							{% endfor %}
+								<!-- Pagination -->
+
+						{% else %}
+						<div class="col-12">
+							<p>No Blogs Available</p>
+						</div>
+						{% endif %}
+					</div>
+					<div class="row">
+						<div class="col-12">
+					{% if b.has_other_pages %}
+					<div class="pagination text-center">                
+						<nav class="pagination__nav clearfix">
+							{% if b.has_previous %}
+							<a href="?page={{b.previous_page_number}}" class="pagination__page"><i class="ui-arrow-left"></i></a>
+							{% else %}
+							<a class="pagination__page disabled"><i class="ui-arrow-left"></i></a>
+							{% endif %}
+							{% for i in b.paginator.page_range %}
+								{% if b.number == i %}
+									<span class="pagination__page pagination__page--active">{{i}}</span>
+								{% else %}
+							<a href="?page={{i}}" class="pagination__page">{{i}}</a>
+								{% endif %}
+							{% endfor %}
+							{% if b.has_next %}
+							<a href="?page={{b.next_page_number}}" class="pagination__page"><i class="ui-arrow-right"></i></a>
+							{% else %}
+							<a class="pagination__page disabled"><i class="ui-arrow-right"></i></a>
+							{% endif %}
+						</nav>
+					</div>
+					{% endif %}
+					</div>
+					</div>
+				</div>
+			</section> <!-- end blog -->
+
+		</div> <!-- end content wrap -->
+
+		{% endblock %}

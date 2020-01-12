@@ -1,0 +1,242 @@
+/*
+    Icon Font orion-font generated from orioniconlibrary.com
+  */
+
+  @font-face {
+  font-family: "orion-font";
+  src: url("./orion-font.eot");
+  src: url("./orion-font.eot?#iefix") format("embedded-opentype"),
+       url("./orion-font.woff2") format("woff2"),
+       url("./orion-font.woff") format("woff"),
+       url("./orion-font.ttf") format("truetype"),
+       url("./orion-font.svg#orion-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "orion-font";
+    src: url("./orion-font.svg#orion-font") format("svg");
+  }
+}
+
+  [data-icon]::before { content: attr(data-icon); }
+
+  [data-icon]::before,
+  .o-audio-call-1::before,
+.o-bank-check-1::before,
+.o-binocular-1::before,
+.o-bookmark-1::before,
+.o-briefcase-1::before,
+.o-business-report-1::before,
+.o-calculator-1::before,
+.o-call-contact-1::before,
+.o-champion-1::before,
+.o-chat-app-1::before,
+.o-chemistry-1::before,
+.o-configuration-1::before,
+.o-currency-1::before,
+.o-customer-support-1::before,
+.o-data-app-1::before,
+.o-data-content-1::before,
+.o-design-1::before,
+.o-diploma-1::before,
+.o-dollar-sign-1::before,
+.o-download-1::before,
+.o-download-cloud-1::before,
+.o-duplicate-tool-1::before,
+.o-earth-globe-1::before,
+.o-edit-1::before,
+.o-edit-window-1::before,
+.o-error-bug-1::before,
+.o-expand-1::before,
+.o-filter-data-1::before,
+.o-firewall-1::before,
+.o-giftbox-1::before,
+.o-glasses-1::before,
+.o-grid-layout-1::before,
+.o-handshake-1::before,
+.o-heart-1::before,
+.o-hide-layer-1::before,
+.o-html5-1::before,
+.o-idea-1::before,
+.o-imac-screen-1::before,
+.o-image-gallery-1::before,
+.o-inkpot-1::before,
+.o-key-1::before,
+.o-label-1::before,
+.o-laptop-screen-1::before,
+.o-lifebelt-1::before,
+.o-lightning-bolt-1::before,
+.o-loop-1::before,
+.o-luxury-1::before,
+.o-mail-1::before,
+.o-maximize-window-1::before,
+.o-microphone-1::before,
+.o-microscope-1::before,
+.o-missile-1::before,
+.o-money-box-1::before,
+.o-mouse-1::before,
+.o-network-1::before,
+.o-page-1::before,
+.o-paint-bucket-1::before,
+.o-paper-plane-1::before,
+.o-pay-1::before,
+.o-pencil-1::before,
+.o-permalink-1::before,
+.o-pie-chart-1::before,
+.o-pin-1::before,
+.o-pin-2::before,
+.o-play-video-1::before,
+.o-point-hand-1::before,
+.o-portfolio-grid-1::before,
+.o-print-1::before,
+.o-property-1::before,
+.o-puzzle-1::before,
+.o-recurring-appointment-1::before,
+.o-recycle-1::before,
+.o-refresh-database-1::before,
+.o-refresh-window-1::before,
+.o-retro-camera-1::before,
+.o-royal-1::before,
+.o-sales-up-1::before,
+.o-security-1::before,
+.o-security-shield-1::before,
+.o-set-square-1::before,
+.o-settings-1::before,
+.o-shopping-bag-1::before,
+.o-smartphone-1::before,
+.o-smartphone-2::before,
+.o-social-1::before,
+.o-sorting-1::before,
+.o-source-code-1::before,
+.o-speed-1::before,
+.o-stack-1::before,
+.o-star-1::before,
+.o-strategy-1::before,
+.o-telephone-operator-1::before,
+.o-text-search-1::before,
+.o-upload-1::before,
+.o-upload-to-cloud-1::before,
+.o-user-group-1::before,
+.o-vector-1::before,
+.o-visible-1::before,
+.o-wall-clock-1::before,
+.o-wallet-1::before {
+    display: inline-block;
+  font-family: "orion-font";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  }
+
+  .o-audio-call-1::before { content: "\f707"; }
+.o-bank-check-1::before { content: "\f708"; }
+.o-binocular-1::before { content: "\f709"; }
+.o-bookmark-1::before { content: "\f70a"; }
+.o-briefcase-1::before { content: "\f70b"; }
+.o-business-report-1::before { content: "\f70c"; }
+.o-calculator-1::before { content: "\f70d"; }
+.o-call-contact-1::before { content: "\f70e"; }
+.o-champion-1::before { content: "\f70f"; }
+.o-chat-app-1::before { content: "\f710"; }
+.o-chemistry-1::before { content: "\f711"; }
+.o-configuration-1::before { content: "\f712"; }
+.o-currency-1::before { content: "\f713"; }
+.o-customer-support-1::before { content: "\f714"; }
+.o-data-app-1::before { content: "\f715"; }
+.o-data-content-1::before { content: "\f716"; }
+.o-design-1::before { content: "\f717"; }
+.o-diploma-1::before { content: "\f718"; }
+.o-dollar-sign-1::before { content: "\f719"; }
+.o-download-1::before { content: "\f71a"; }
+.o-download-cloud-1::before { content: "\f71b"; }
+.o-duplicate-tool-1::before { content: "\f71c"; }
+.o-earth-globe-1::before { content: "\f71d"; }
+.o-edit-1::before { content: "\f71e"; }
+.o-edit-window-1::before { content: "\f71f"; }
+.o-error-bug-1::before { content: "\f720"; }
+.o-expand-1::before { content: "\f721"; }
+.o-filter-data-1::before { content: "\f722"; }
+.o-firewall-1::before { content: "\f723"; }
+.o-giftbox-1::before { content: "\f724"; }
+.o-glasses-1::before { content: "\f725"; }
+.o-grid-layout-1::before { content: "\f726"; }
+.o-handshake-1::before { content: "\f727"; }
+.o-heart-1::before { content: "\f728"; }
+.o-hide-layer-1::before { content: "\f729"; }
+.o-html5-1::before { content: "\f72a"; }
+.o-idea-1::before { content: "\f72b"; }
+.o-imac-screen-1::before { content: "\f72c"; }
+.o-image-gallery-1::before { content: "\f72d"; }
+.o-inkpot-1::before { content: "\f72e"; }
+.o-key-1::before { content: "\f72f"; }
+.o-label-1::before { content: "\f730"; }
+.o-laptop-screen-1::before { content: "\f731"; }
+.o-lifebelt-1::before { content: "\f732"; }
+.o-lightning-bolt-1::before { content: "\f733"; }
+.o-loop-1::before { content: "\f734"; }
+.o-luxury-1::before { content: "\f735"; }
+.o-mail-1::before { content: "\f736"; }
+.o-maximize-window-1::before { content: "\f737"; }
+.o-microphone-1::before { content: "\f738"; }
+.o-microscope-1::before { content: "\f739"; }
+.o-missile-1::before { content: "\f73a"; }
+.o-money-box-1::before { content: "\f73b"; }
+.o-mouse-1::before { content: "\f73c"; }
+.o-network-1::before { content: "\f73d"; }
+.o-page-1::before { content: "\f73e"; }
+.o-paint-bucket-1::before { content: "\f73f"; }
+.o-paper-plane-1::before { content: "\f740"; }
+.o-pay-1::before { content: "\f741"; }
+.o-pencil-1::before { content: "\f742"; }
+.o-permalink-1::before { content: "\f743"; }
+.o-pie-chart-1::before { content: "\f744"; }
+.o-pin-1::before { content: "\f745"; }
+.o-pin-2::before { content: "\f746"; }
+.o-play-video-1::before { content: "\f747"; }
+.o-point-hand-1::before { content: "\f748"; }
+.o-portfolio-grid-1::before { content: "\f749"; }
+.o-print-1::before { content: "\f74a"; }
+.o-property-1::before { content: "\f74b"; }
+.o-puzzle-1::before { content: "\f74c"; }
+.o-recurring-appointment-1::before { content: "\f74d"; }
+.o-recycle-1::before { content: "\f74e"; }
+.o-refresh-database-1::before { content: "\f74f"; }
+.o-refresh-window-1::before { content: "\f750"; }
+.o-retro-camera-1::before { content: "\f751"; }
+.o-royal-1::before { content: "\f752"; }
+.o-sales-up-1::before { content: "\f753"; }
+.o-security-1::before { content: "\f754"; }
+.o-security-shield-1::before { content: "\f755"; }
+.o-set-square-1::before { content: "\f756"; }
+.o-settings-1::before { content: "\f757"; }
+.o-shopping-bag-1::before { content: "\f758"; }
+.o-smartphone-1::before { content: "\f759"; }
+.o-smartphone-2::before { content: "\f75a"; }
+.o-social-1::before { content: "\f75b"; }
+.o-sorting-1::before { content: "\f75c"; }
+.o-source-code-1::before { content: "\f75d"; }
+.o-speed-1::before { content: "\f75e"; }
+.o-stack-1::before { content: "\f75f"; }
+.o-star-1::before { content: "\f760"; }
+.o-strategy-1::before { content: "\f761"; }
+.o-telephone-operator-1::before { content: "\f762"; }
+.o-text-search-1::before { content: "\f763"; }
+.o-upload-1::before { content: "\f764"; }
+.o-upload-to-cloud-1::before { content: "\f765"; }
+.o-user-group-1::before { content: "\f766"; }
+.o-vector-1::before { content: "\f767"; }
+.o-visible-1::before { content: "\f768"; }
+.o-wall-clock-1::before { content: "\f769"; }
+.o-wallet-1::before { content: "\f76a"; }
+
+  
