@@ -1,11 +1,12 @@
 from django.db import models
 from datetime import datetime
+from ckeditor.fields import RichTextField
 
 class blog(models.Model):
     title = models.CharField(max_length=100)
     Type = models.CharField(max_length=20)
     author = models.CharField(max_length=100)
-    content = models.TextField(blank=True)
+    content = RichTextField()
     photo_blog = models.ImageField(upload_to='blog/%Y/%m/%d/')
     is_published = models.BooleanField(default=True)
     blog_date = models.DateTimeField(default=datetime.now, blank=True)

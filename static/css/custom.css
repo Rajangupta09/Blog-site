@@ -85,6 +85,7 @@
 .contain .card.card-1{
   transform: scale(1.2);
   box-sizing: border-box;
+  transform: translateY(30px);
   box-shadow: 0 60px 80px rgba(0, 0, 0, 0.7);
 }
 .contain .card .face.face1{

@@ -35,3 +35,5 @@ def contact(request):
 
         messages.success(request, 'Your request has been submitted')
         return redirect('/#contact')
+    else:
+         return redirect('/#contact')
