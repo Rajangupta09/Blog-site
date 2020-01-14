@@ -86,10 +86,218 @@
 								<a href="#" rel="tag">#tags</a>
 								<a href="#" rel="tag">#tags</a>			
 							</div>
-
+					
+							<div id="comments" class="entry__comments">
+									<h5 class="entry__comments-title">[No.] Comments</h5>
+									<ul class="comment-list">
+										<li class="comment even thread-even depth-1 parent">
+											<article class="comment-body">
+												<div class="comment-avatar vcard">
+													<img alt="" src="#" class="avatar avatar-46 photo">
+												</div>
+												<div class="comment-text">
+													<h6 class="comment-author">Person</h6>
+													<span class="says">says:</span>
+													<div class="comment-metadata">
+														<a href="#" class="comment-date">
+															<time datetime="2018-06-07T06:11:32+00:00">June 7, 2018 at 6:11 am</time>
+														</a>
+													</div>
+													<div class="comment-content">
+														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque assumenda suscipit dolor repudiandae, consequuntur voluptatum tenetur molestiae repellendus. Fugit a omnis dolore consequatur totam et tempore fugiat quisquam harum.</p>
+													</div>
+													<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to DeoThemes">Reply</a></div>
+												</div>
+											</article>
+											<ul class="children">
+												<li class="comment odd alt depth-2">
+													<article class="comment-body">
+														<div class="comment-avatar vcard">
+															<img alt="" src="" class="avatar avatar-46 photo">
+														</div>
+														<div class="comment-text">
+															<h6 class="comment-author">Person1</h6>
+															<span class="says">says:</span>
+															<div class="comment-metadata">
+																<a href="#" class="comment-date">
+																	<time datetime="2018-06-07T06:23:38+00:00">June 7, 2018 at 6:23 am</time>
+																</a>
+															</div>
+															<div class="comment-content">
+																<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae. Distinctio numquam excepturi ab voluptas quibusdam voluptatum voluptate inventore error! Numquam similique sed fuga quam quae ducimus, exercitationem quisquam facere.</p>
+															</div>
+	
+															<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Christopher Robins">Reply</a></div>
+														</div>
+													</article>
+												</li>
+											</ul>
+										</li>
+										<li class="comment">
+											<article class="comment-body">
+												<div class="comment-avatar vcard">
+													<img alt="" src="" class="avatar avatar-46 photo">
+												</div>
+												<div class="comment-text">
+													<h6 class="comment-author">ron</h6>
+													<span class="says">says:</span>
+													<div class="comment-metadata">
+														<a href="#" class="comment-date">
+															<time datetime="2018-06-07T06:11:32+00:00">June 7, 2018 at 6:11 am</time>
+														</a>
+													</div>
+													<div class="comment-content">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nesciunt incidunt quisquam id laboriosam numquam, vel vitae maiores nostrum facere magni obcaecati quibusdam, sunt quod nisi neque necessitatibus velit quia.</p>
+													</div>
+													<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to DeoThemes">Reply</a></div>
+												</div>
+											</article>
+										</li>
+									</ul>
+									
+									<!-- Comment Form -->
+									<div class="comment-respond">
+										<h5 class="comment-respond__title">Post a Comment</h5>
+										<form action="#" method="post" id="commentform" class="comment-form" novalidate="">
+											<div class="row row-16">
+												<div class="col-lg-4">
+													<label for="author">Name *</label>
+													<input id="author" name="author" type="text" value="" required="required">
+												</div>
+												<div class="col-lg-4">
+													<label for="comment-email">Email *</label>
+													<input id="comment-email" name="email" type="text" value="" required="required">
+												</div>
+												<div class="col-lg-4">
+													<label for="url">Website</label>
+													<input id="url" name="url" type="text" value="">
+												</div>
+											</div>
+											<label for="comment">Comment</label>
+											<textarea id="comment" class="form-control" name="comment" rows="6" required="required"></textarea>
+											<label class="consent-checkbox" for="wp-comment-cookies-consent">
+												<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">
+												<span class="consent-checkbox__label">Save my name, email, and website in this browser for the next time I comment.</span>
+											</label>
+											<p class="form-submit">
+												<input name="submit" type="submit" id="submit" class="btn btn--lg btn--color" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="220" id="comment_post_ID">
+											</p>
+										</form>          
+									</div><!-- end comment form -->
+	
+								</div> 
+	
+							</div> 
+	
+						</div>
 					</div>
-				</div>
+				</section>
+	
+			
+
+			<section class="section-wrap bg-light pb-72">
+					<div class="container">
+						<div class="title-row text-center">
+							<h2 class="section-title">You may also like</h2>
+						</div>
+				
+						<div class="row">
+							{% if posts %}
+							{% for blog in posts %}
+							<div class="col-lg-4">
+								<div class="animate">
+									<div class="animate-container">
+										<article class="entry">
+											<div class="entry__header hover-shrink">
+												<a href="{% url 'blogs' blog.id %}" class="entry__img-url hover-shrink--shrink">
+													<img src="{{ blog.photo_blog.url }}" class="entry__img hover-shrink--zoom" itemprop="image" alt="image">
+												</a>
+											</div>
+											<div class="entry__body">
+												<div class="entry__meta">
+													<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">{{blog.blog_date}}</span>
+													<span class="entry__meta-item entry__meta-category">
+														<span>in </span>
+														<a href="#" class="entry__meta-category-url">{{blog.Type}}</a>
+													</span>                  
+												</div>                
+												<h4 class="entry__title title-underline">
+													<a href="single-post.html" itemprop="headline">{{blog.title}}</a>
+												</h4>
+												<div class="entry__meta">
+													<span class="entry__meta-item entry__meta-author">
+														<span>by</span>
+														<a href="#" class="entry__meta-author-url">
+															<span class="entry__meta-author-name" itemprop="author">{{ blog.author }}</span>
+														</a>
+													</span>
+												</div>                 
+											</div>
+										</article>
+									</div>
+								</div>
+							</div>
+							{% endfor %}
+						{% else %}
+							<div class="col-md-12">
+								<h3>No Blogs...</h3>
+							</div>
+						{% endif %}
+						
+						</div>
+	
+					</div>
 			</section>
+	
+			
+				<nav class="entry-navigation">
+					<div class="entry-navigation__row clearfix">
+						{% if post.id != 1 %}
+
+						<div class="entry-navigation__col entry-navigation--left">
+							<img class="entry-navigation__img" src="{{post.get_previous_by_blog_date.photo_blog.url }}"></img>
+							<a href="{{post.id | add:'-1' }}" class="entry-navigation__url"></a>
+							<div class="entry-navigation__body">
+								<span class="entry-navigation__label">Previous Post</span>
+								<h6 class="entry-navigation__title">{{post.get_previous_by_blog_date}}</h6>
+							</div>
+						</div>
+						{% else %}
+						<div class="entry-navigation__col entry-navigation--left">
+							<img class="entry-navigation__img" src="{{post.photo_blog.url }}"></img>
+							<a class="entry-navigation__url disabled"></a>
+							<div class="entry-navigation__body">
+								<span class="entry-navigation__label"></span>
+								<h6 class="entry-navigation__title">No Previous Post</h6>
+							</div>
+						</div>
+						{% endif %}
+						{% if post.get_next_by_blog_date %}
+						<div class="entry-navigation__col entry-navigation--right bg-overlay">
+							<img class="entry-navigation__img" src="{{post.get_next_by_blog_date.photo_blog.url }}"></img>
+							<a href="{{post.id | add:'1' }}" class="entry-navigation__url"></a>
+							<div class="entry-navigation__body">
+								<span class="entry-navigation__label">Next Post</span>
+								<h6 class="entry-navigation__title">{{post.get_next_by_blog_date}}</h6>
+							</div>
+						</div>
+						{% else %}
+						<div class="entry-navigation__col entry-navigation--right bg-overlay">
+							<img class="entry-navigation__img" src="{{post.photo_blog.url }}"></img>
+							<a  class="entry-navigation__url disabled"></a>
+							<div class="entry-navigation__body">
+								<span class="entry-navigation__label"></span>
+								<h6 class="entry-navigation__title">No Posts</h6>
+							</div>
+						</div>
+						{% endif %}
+					</div>
+				</nav>
+	<br /><br /><br />
+
+
+
+
 			</div>
-		</div> 
+	
 	{% endblock %}

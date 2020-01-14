@@ -7741,6 +7741,7 @@ figcaption {
   height: 100%;
   left: 0;
   top: 0;
+  opacity: 0.5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7763,10 +7764,14 @@ figcaption {
 
 .entry-navigation--left {
   float: left;
-  text-align: right; }
+  text-align: right; 
+  background: linear-gradient(0deg, rgba(134,55,123,1) 47%, rgba(39,39,60,1) 80%); 
+}
 
 .entry-navigation--right {
-  float: right; }
+  float: right;
+  background: linear-gradient(0deg, rgba(124,26,4,0.7010154403558299) 47%, rgba(201,90,22,0.8942927512801996) 80%);
+}
 
 .entry-navigation__body {
   padding: 96px 8%;
@@ -7781,14 +7786,20 @@ figcaption {
 
 .entry-navigation__title {
   color: #fff; }
-
+  .entry-navigation__title:hover{
+    color: #fe5900 ;
+  }
 @media only screen and (max-width: 575px) {
   .entry-navigation__row {
     display: block; }
   .entry-navigation__col {
-    width: 100%;
-    float: none;
-    text-align: center; } }
+    height: 200px;
+    float: flex;
+    text-align: center; } 
+    .entry-navigation__body{
+      padding-top: 40px;
+    }
+  }
 
 /* Alignment
 -------------------------------------------------------*/
