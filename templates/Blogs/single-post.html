@@ -6,193 +6,188 @@
 		<div class="content-wrap">
 
 			
-			<section class="blog-page-title bg-overlay bg-overlay--light-68" style="background-image: url(../static/img/blog/single/image.jpg);">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<div class="blog-page-title__holder">
-								<span class="entry__meta-category">
-									<a href="#" class="entry__meta-category-url">{{post.Type}}</a>
-								</span>
-								<h1 class="blog-page-title__title">{{post.title}}</h1>
-								<div class="entry__meta">							
-									<span class="entry__meta-item entry__meta-author">
-										<span>by</span>
-										<a href="#" class="entry__meta-author-url">
-											<span class="entry__meta-author-name" itemprop="author">{{ post.author }}</span>
-										</a>
-									</span>
-									<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">{{post.blog_date}}</span>
-								</div>
-							</div>						
-						</div>						
+<section class="blog-page-title bg-overlay bg-overlay--light-68" style="background-image: url(../static/img/blog/single/image.jpg);">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="blog-page-title__holder">
+					<span class="entry__meta-category">
+						<a href="#" class="entry__meta-category-url">{{post.Type}}</a>
+					</span>
+					<h1 class="blog-page-title__title">{{post.title}}</h1>
+					<div class="entry__meta">							
+						<span class="entry__meta-item entry__meta-author">
+							<span>by</span>
+							<a href="#" class="entry__meta-author-url">
+								<span class="entry__meta-author-name" itemprop="author">{{ post.author }}</span>
+							</a>
+						</span>
+						<span class="entry__meta-item entry__meta-date" itemprop="datePublished" content="2019-11-13">{{post.blog_date}}</span>
 					</div>
-				</div>
-			</section> 
+				</div>						
+			</div>						
+		</div>
+	</div>
+</section> 
 
-			<section class="section-blog-single angle angle--top pb-96">
-				<div class="container">
-					<div class="row justify-content-center">
-
-						<div class="col-lg-8 blog__content mb-32">
-							<article class="entry single-post__entry">
-								<div class="entry__article-wrap">
-
-									<div class="entry__share">
-										<div class="sticky-col">
-											<div class="socials socials--rounded socials--large socials--colored entry__share-socials">
-												<a class="social social-facebook entry__share-social"
-													href="#" target="_blank"><i class="ui-facebook"></i>
-												</a>
-												<a class="social social-twitter entry__share-social"
-													href="#" target="_blank"><i class="ui-twitter"></i>
-												</a>
-												<a class="social social-linkedin entry__share-social"
-													href="#" target="_blank"><i class="ui-linkedin"></i>
-												</a>
-											</div>
-										</div>
-									</div>
-
-									<div class="entry__article">
-										<p>{{ post.content | safe }}</p>
-										<ul class="wp-block-gallery columns-3 is-cropped">
-											<li class="blocks-gallery-item">
-												<figure>
-													<img src="{{ post.photo_blog.url }}" alt="">
-													<figcaption>caption</figcaption>
-												</figure>
-											</li>
-											<li class="blocks-gallery-item">
-												<figure>
-													<img src="{{ post.photo_blog.url }}" alt="">
-													<figcaption>caption</figcaption>
-												</figure>
-											</li>
-											<li class="blocks-gallery-item">
-												<figure>
-													<img src="{{ post.photo_blog.url }}" alt="">
-													<figcaption>caption</figcaption>
-												</figure>
-											</li>
-										</ul>
-
-									</div>
-
+<section class="section-blog-single angle angle--top pb-96">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 blog__content mb-32">
+				<article class="entry single-post__entry">
+					<div class="entry__article-wrap">
+						<div class="entry__share">
+							<div class="sticky-col">
+								<div class="socials socials--rounded socials--large socials--colored entry__share-socials">
+									<a class="social social-facebook entry__share-social"
+										href="#" target="_blank"><i class="ui-facebook"></i>
+									</a>
+									<a class="social social-twitter entry__share-social"
+										href="#" target="_blank"><i class="ui-twitter"></i>
+									</a>
+									<a class="social social-linkedin entry__share-social"
+										href="#" target="_blank"><i class="ui-linkedin"></i>
+									</a>
 								</div>
-							</article>
-
-							<div class="entry__tags disabled">
-								<a href="#" rel="tag">#tags</a>
-								<a href="#" rel="tag">#tags</a>			
 							</div>
-					
-							<div id="comments" class="entry__comments">
-									<h5 class="entry__comments-title">[No.] Comments</h5>
-									<ul class="comment-list">
-										<li class="comment even thread-even depth-1 parent">
-											<article class="comment-body">
-												<div class="comment-avatar vcard">
-													<img alt="" src="#" class="avatar avatar-46 photo">
-												</div>
-												<div class="comment-text">
-													<h6 class="comment-author">Person</h6>
-													<span class="says">says:</span>
-													<div class="comment-metadata">
-														<a href="#" class="comment-date">
-															<time datetime="2018-06-07T06:11:32+00:00">June 7, 2018 at 6:11 am</time>
-														</a>
-													</div>
-													<div class="comment-content">
-														<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque assumenda suscipit dolor repudiandae, consequuntur voluptatum tenetur molestiae repellendus. Fugit a omnis dolore consequatur totam et tempore fugiat quisquam harum.</p>
-													</div>
-													<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to DeoThemes">Reply</a></div>
-												</div>
-											</article>
-											<ul class="children">
-												<li class="comment odd alt depth-2">
-													<article class="comment-body">
-														<div class="comment-avatar vcard">
-															<img alt="" src="" class="avatar avatar-46 photo">
-														</div>
-														<div class="comment-text">
-															<h6 class="comment-author">Person1</h6>
-															<span class="says">says:</span>
-															<div class="comment-metadata">
-																<a href="#" class="comment-date">
-																	<time datetime="2018-06-07T06:23:38+00:00">June 7, 2018 at 6:23 am</time>
-																</a>
-															</div>
-															<div class="comment-content">
-																<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repudiandae. Distinctio numquam excepturi ab voluptas quibusdam voluptatum voluptate inventore error! Numquam similique sed fuga quam quae ducimus, exercitationem quisquam facere.</p>
-															</div>
-	
-															<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Christopher Robins">Reply</a></div>
-														</div>
-													</article>
-												</li>
-											</ul>
-										</li>
-										<li class="comment">
-											<article class="comment-body">
-												<div class="comment-avatar vcard">
-													<img alt="" src="" class="avatar avatar-46 photo">
-												</div>
-												<div class="comment-text">
-													<h6 class="comment-author">ron</h6>
-													<span class="says">says:</span>
-													<div class="comment-metadata">
-														<a href="#" class="comment-date">
-															<time datetime="2018-06-07T06:11:32+00:00">June 7, 2018 at 6:11 am</time>
-														</a>
-													</div>
-													<div class="comment-content">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique nesciunt incidunt quisquam id laboriosam numquam, vel vitae maiores nostrum facere magni obcaecati quibusdam, sunt quod nisi neque necessitatibus velit quia.</p>
-													</div>
-													<div class="reply"><a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to DeoThemes">Reply</a></div>
-												</div>
-											</article>
-										</li>
-									</ul>
-									
-									<!-- Comment Form -->
-									<div class="comment-respond">
-										<h5 class="comment-respond__title">Post a Comment</h5>
-										<form action="#" method="post" id="commentform" class="comment-form" novalidate="">
-											<div class="row row-16">
-												<div class="col-lg-4">
-													<label for="author">Name *</label>
-													<input id="author" name="author" type="text" value="" required="required">
-												</div>
-												<div class="col-lg-4">
-													<label for="comment-email">Email *</label>
-													<input id="comment-email" name="email" type="text" value="" required="required">
-												</div>
-												<div class="col-lg-4">
-													<label for="url">Website</label>
-													<input id="url" name="url" type="text" value="">
-												</div>
-											</div>
-											<label for="comment">Comment</label>
-											<textarea id="comment" class="form-control" name="comment" rows="6" required="required"></textarea>
-											<label class="consent-checkbox" for="wp-comment-cookies-consent">
-												<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes">
-												<span class="consent-checkbox__label">Save my name, email, and website in this browser for the next time I comment.</span>
-											</label>
-											<p class="form-submit">
-												<input name="submit" type="submit" id="submit" class="btn btn--lg btn--color" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="220" id="comment_post_ID">
-											</p>
-										</form>          
-									</div><!-- end comment form -->
-	
-								</div> 
-	
-							</div> 
-	
 						</div>
+		<div class="entry__article">
+			<p>{{ post.content | safe }}</p>
+			<ul class="wp-block-gallery columns-3 is-cropped">
+				<li class="blocks-gallery-item">
+					<figure>
+						<img src="{{ post.photo_blog.url }}" alt="">
+						<figcaption>caption</figcaption>
+					</figure>
+				</li>
+				<li class="blocks-gallery-item">
+					<figure>
+						<img src="{{ post.photo_blog.url }}" alt="">
+						<figcaption>caption</figcaption>
+					</figure>
+				</li>
+				<li class="blocks-gallery-item">
+					<figure>
+						<img src="{{ post.photo_blog.url }}" alt="">
+						<figcaption>caption</figcaption>
+					</figure>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</article>
+
+	<div class="entry__tags disabled">
+		<a href="#" rel="tag">#tags</a>
+		<a href="#" rel="tag">#tags</a>			
+	</div>
+
+	<div id="comments" class="entry__comments">
+		<h5 class="entry__comments-title">{{ comment.count }}  Comments</h5>
+			<ul class="comment-list">
+				{% for comments in comment %}
+				<li class="comment even thread-even depth-1 parent">
+				<article class="comment-body">
+					<div class="comment-avatar vcard">
+						<img alt="" src="#" class="avatar avatar-46 photo">
 					</div>
-				</section>
-	
+					<div class="comment-text">
+					<h6 class="comment-author">{{comments.Name}}</h6>
+					<span class="says">says:</span>
+					<div class="comment-metadata">
+						<a href="#" class="comment-date">
+							<time datetime="2018-06-07T06:11:32+00:00">{{comments.Created}}</time>
+						</a>
+					</div>
+				<div class="comment-content">
+					<p>{{ comments.Body | linebreaks }}</p>
+				</div>
+				<div class="reply"><a onclick="myFunction()"class="comment-reply-link" href="#"  data-toggle="modal" data-target="#contact-form-modal">Reply</a></div>
+				<div id="reply">
+					<form method="POST" class="comment-form" novalidate="">
+						{{ comment_form.as_p}}
+						{% csrf_token %}
+						<input type="hidden" name="parent_id" value="{{comments.id}}">
+						<input name="submit" type="submit" class="btn btn--md btn--color" value="Reply">
+						</form> 
+				</div>
+				<script>
+				function myFunction() {
+					var x = document.getElementById("reply");
+					if (x.style.display === "none") {
+					  x.style.display = "block";
+					} else {
+					  x.style.display = "none";
+					}
+				  }
+				  </script>		
+				  	</div>
+						</article>
+								<ul class="children">
+									{% for reply in comments.replies.all %}
+									<li class="comment odd alt depth-2">
+										<article class="comment-body">
+											<div class="comment-avatar vcard">
+												<img alt="" src="" class="avatar avatar-46 photo">
+											</div>
+											<div class="comment-text">
+												<h6 class="comment-author">{{reply.Name}}</h6>
+												<span class="says">says:</span>
+												<div class="comment-metadata">
+													<a href="#" class="comment-date">
+														<time datetime="2018-06-07T06:23:38+00:00">June 7, 2018 at 6:23 am</time>
+													</a>
+												</div>
+												<div class="comment-content">
+													<p>{{reply.Body | linebreaks }}</p>
+												</div>
+
+												<div class="reply"><a onclick="myFunction()"class="comment-reply-link" href="#"  data-toggle="modal" data-target="#contact-form-modal">Reply</a></div>
+												<div id="reply">
+													<form method="POST" class="comment-form" novalidate="">
+														{{ comment_form.as_p}}
+														{% csrf_token %}
+														<input type="hidden" name="parent_id" value="{{Comments.id}}">
+														<input name="submit" type="submit" class="btn btn--md btn--color" value="Reply">
+														</form> 
+												</div>
+												<script>
+												function myFunction() {
+													var x = document.getElementById("reply");
+													if (x.style.display === "none") {
+													  x.style.display = "block";
+													} else {
+													  x.style.display = "none";
+													}
+												  }
+												  </script>												
+											</div>
+										</article>
+									</li>
+									{% endfor %}
+								</ul>
+							</li>
+						{% endfor %}
+
+						</ul>
+						<section id="comment">
+							
+						<div class="comment-respond">
+							<h5 class="comment-respond__title">Post a Comment</h5>
+							<form method="POST" class="comment-form" novalidate="">
+							{{ comment_form.as_p}}
+							{% csrf_token %}
+							<input name="submit" type="submit" class="btn btn--lg btn--color" value="Post Comment">
+							</form>          
+						</div>
+						</section>
+					</div> 
+				</div> 
+			</div>
+		</div>
+</section>
+
 			
 
 			<section class="section-wrap bg-light pb-72">

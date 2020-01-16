@@ -148,3 +148,11 @@
   transform: translateX(-10px);
   transition: visibility 0s 250ms, opacity 250ms, transform 250ms;
 }
+
+#reply input{
+  height:30px;
+}
+#reply input#id_Name{
+  width: 50%;
+  float: left;
+}

@@ -1316,12 +1316,16 @@ a.close.disabled {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0; }
-
+.comment-respond-reply form{
+  display: none;
+}
+.comment-respond-reply form:hover{
+  display: block;
+}
 .modal-backdrop {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1040;
   width: 100vw;
   height: 100vh;
   background-color: #000; }
@@ -7706,7 +7710,9 @@ figcaption {
 
 .comment-respond {
   margin-top: 64px; }
-
+.comment-respond-reply{
+  display:none;
+}
 /* Entry Navigation
 /*-------------------------------------------------------*/
 .entry-navigation__row {

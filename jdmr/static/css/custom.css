@@ -148,3 +148,35 @@
   transform: translateX(-10px);
   transition: visibility 0s 250ms, opacity 250ms, transform 250ms;
 }
+
+
+
+
+#reply{
+  margin-top: 5%;
+  
+}
+#reply textarea#id_Body{
+  max-height: 50px;
+}
+#reply input{
+  height:30px;
+}
+#reply input.btn.btn--md.btn--color{
+  display: block;
+  height: auto;
+}
+#reply p{
+  display: inline-block;
+}
+@media (max-width:991px){
+#reply p{
+  display: block;
+}
+#reply input#id_Name{
+  width: 60%;
+}
+#reply input#id_Email{
+  width: 60%;
+}
+}
