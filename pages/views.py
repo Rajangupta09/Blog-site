@@ -6,12 +6,20 @@ from .models import blog
 from .models import Contact
 from .models import Comment
 from .models import Team
+from .models import *
 from .forms import *
 
 
 def index(request):
     teams = Team.objects.all()
-    return render(request, 'pages/index.html', {'teams' : teams})
+    testimonial = Testimonial.objects.all()
+    associate = Association.objects.all()
+    context = {
+        'teams':teams,
+        'testimonial' : testimonial,
+        'associate' : associate
+    }
+    return render(request, 'pages/index.html', context)
 
 def Blog(request):
     b = blog.objects.all()

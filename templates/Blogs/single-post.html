@@ -103,25 +103,15 @@
 				<div class="comment-content">
 					<p>{{ comments.Body | linebreaks }}</p>
 				</div>
-				<div class="reply"><a onclick="myFunction()"class="comment-reply-link" href="#"  data-toggle="modal" data-target="#contact-form-modal">Reply</a></div>
-				<div id="reply">
+				<div class="reply"><a class="comment-reply-link" href="#"  data-toggle="collapse" data-target="#reply{{comments.id}}">Reply</a></div>
+				<div id="reply{{comments.id}}" class="collapse">
 					<form method="POST" class="comment-form" novalidate="">
 						{{ comment_form.as_p}}
 						{% csrf_token %}
 						<input type="hidden" name="parent_id" value="{{comments.id}}">
 						<input name="submit" type="submit" class="btn btn--md btn--color" value="Reply">
 						</form> 
-				</div>
-				<script>
-				function myFunction() {
-					var x = document.getElementById("reply");
-					if (x.style.display === "none") {
-					  x.style.display = "block";
-					} else {
-					  x.style.display = "none";
-					}
-				  }
-				  </script>		
+				</div>	
 				  	</div>
 						</article>
 								<ul class="children">
@@ -143,25 +133,7 @@
 													<p>{{reply.Body | linebreaks }}</p>
 												</div>
 
-												<div class="reply"><a onclick="myFunction()"class="comment-reply-link" href="#"  data-toggle="modal" data-target="#contact-form-modal">Reply</a></div>
-												<div id="reply">
-													<form method="POST" class="comment-form" novalidate="">
-														{{ comment_form.as_p}}
-														{% csrf_token %}
-														<input type="hidden" name="parent_id" value="{{Comments.id}}">
-														<input name="submit" type="submit" class="btn btn--md btn--color" value="Reply">
-														</form> 
-												</div>
-												<script>
-												function myFunction() {
-													var x = document.getElementById("reply");
-													if (x.style.display === "none") {
-													  x.style.display = "block";
-													} else {
-													  x.style.display = "none";
-													}
-												  }
-												  </script>												
+												<div class="reply"><a class="comment-reply-link" href="#"  data-toggle="collapse" data-target="#reply{{comments.id}}">Reply</a></div>												
 											</div>
 										</article>
 									</li>

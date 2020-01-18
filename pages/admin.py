@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import blog , Comment
 from .models import Contact
 from .models import Team
+from .models import *
 class blogAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'is_published', 'blog_date', 'Type', 'author')
     list_display_links = ('id', 'title', 'blog_date')
@@ -32,3 +33,13 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(active=True)
 
 admin.site.register(Comment, CommentAdmin)
+
+class TestimonialAdmin(admin.ModelAdmin):
+    list_display = ('Name', 'Designation')
+    list_display_links = ('Name', 'Designation')
+admin.site.register(Testimonial, TestimonialAdmin)
+
+class AssociateAdmin(admin.ModelAdmin):
+    list_display = ('Name',)
+    list_display_links = ('Name',)
+admin.site.register(Association, AssociateAdmin)

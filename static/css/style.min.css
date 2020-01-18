@@ -1316,12 +1316,12 @@ a.close.disabled {
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   outline: 0; }
-  .comment-respond-reply form{
-    display: none;
-  }
-  .comment-respond-reply form:hover{
-    display: block;
-  }
+.comment-respond-reply form{
+  display: none;
+}
+.comment-respond-reply form:hover{
+  display: block;
+}
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -1816,7 +1816,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     margin-left: auto;
     margin-right: auto; }
 
-.section-title {
+.title {
   margin-bottom: 34px; }
 
 .section-subtitle {
@@ -2995,7 +2995,7 @@ header .flex-child.flex-right {
   font-size: 0.875rem; }
   .copyright-wrap {
     padding: 40px 0;
-    border-top: 1px solid #323232; }
+     }
   .copyright a {
     color: inherit; }
     .copyright a:hover, .copyright a:focus {
@@ -3483,9 +3483,17 @@ https://flickity.metafizzy.co
 
 .flickity-slide {
   width: 100%; }
+  @media only screen and (max-width: 992px) {
+  .testimonial1{
+    width:100%;
+  }
+  }
   @media only screen and (min-width: 992px) {
-    .flickity-slide {
-      width: 40%; } }
+    .company {
+      width: 20%; } 
+    .testimonial1 {
+      padding-left: 30px;
+        width: 60%; }}
 
 .flickity-page-dots .dot {
   background-color: #686868; }
@@ -6379,16 +6387,17 @@ iframe {
 /* Testimonials
 /*-------------------------------------------------------*/
 .section-testimonials--large-padding {
-  padding: 140px 0 240px; }
+  padding: 100px 0 240px; }
   @media only screen and (min-width: 992px) {
     .section-testimonials--large-padding {
-      padding: 320px 0 400px; } }
+      padding: 150px 0 200px; } }
 
 .testimonial {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-left: 60px;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-align: start;
@@ -7770,14 +7779,14 @@ figcaption {
 
 .entry-navigation--left {
   float: left;
-  text-align: right;
-  background: linear-gradient(0deg, rgba(134,55,123,1) 47%, rgba(39,39,60,1) 80%);  
+  text-align: right; 
+  background: linear-gradient(0deg, rgba(134,55,123,1) 47%, rgba(39,39,60,1) 80%); 
 }
 
 .entry-navigation--right {
   float: right;
   background: linear-gradient(0deg, rgba(124,26,4,0.7010154403558299) 47%, rgba(201,90,22,0.8942927512801996) 80%);
- }
+}
 
 .entry-navigation__body {
   padding: 96px 8%;
@@ -7800,11 +7809,12 @@ figcaption {
     display: block; }
   .entry-navigation__col {
     height: 200px;
-    display: flex;
-    text-align: center; }
+    float: flex;
+    text-align: center; } 
     .entry-navigation__body{
       padding-top: 40px;
-    } }
+    }
+  }
 
 /* Alignment
 -------------------------------------------------------*/

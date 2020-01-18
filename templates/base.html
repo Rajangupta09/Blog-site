@@ -12,6 +12,7 @@
 	<!-- Css -->
 	<link rel="stylesheet" href="{% static 'css/style.min.css' %}" />
 	<link rel="stylesheet" href="{% static 'css/custom.css' %}" />
+	<link rel="stylesheet" href="{% static 'css/aos.css' %}" />
 
 	<link rel="shortcut icon" href="{% static 'img/favicon.ico'%}">
 	<link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
@@ -32,6 +33,7 @@
     {% block content %} {% endblock %}
 
  
+	{% include 'partials/_footer.html' %}
 
 
 <div id="back-to-top">
@@ -43,19 +45,6 @@
 <!-- jQuery Scripts -->
 <script src="{% static 'js/jquery.min.js' %}"></script>
 <script src="{% static 'js/scripts.min.js' %}"></script>
-<link rel='stylesheet' href="{% static 'revolution-addons/distortion/css/distortion.css' %}" type='text/css' media='all' />
-<script type='text/javascript' src="{% static 'revolution-addons/distortion/js/pixi.min.js' %}"></script>
-<script type='text/javascript' src="{% static 'revolution-addons/distortion/js/revolution.addon.distortion.min.js' %}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.video.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.carousel.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.slideanims.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.actions.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.layeranimation.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.kenburn.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.navigation.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.migration.min.js'%}"></script>
-<script type="text/javascript" src="{% static 'revolution/js/extensions/revolution.extension.parallax.min.js'%}"></script>
-
-
+<script src="{% static 'js/aos.js' %}"></script>
 </body>
 </html>

@@ -150,7 +150,9 @@
 }
 
 
-
+.hide{
+  display: none;
+}
 
 #reply{
   margin-top: 5%;
@@ -179,4 +181,8 @@
 #reply input#id_Email{
   width: 60%;
 }
+}
+.footer__bottom{
+  background-color: #ededed;
+  border-top:1px solid #323232
 }

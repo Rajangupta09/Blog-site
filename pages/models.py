@@ -42,9 +42,24 @@ class Team(models.Model):
     Name = models.CharField(max_length=100)
     Picture = models.ImageField(upload_to='Team/%Y/')
     Designation = models.CharField(max_length=100)
-    facebook_link= models.CharField(max_length=100)
-    twitter_link= models.CharField(max_length=100)
-    in_link= models.CharField(max_length=100)
+    facebook_link= models.CharField(max_length=100, blank=True)
+    twitter_link= models.CharField(max_length=100, blank=True)
+    in_link= models.CharField(max_length=100, blank=True)
     def __str__(self):
         return self.Designation
+
+class Testimonial(models.Model):
+    Name = models.CharField(max_length=50)
+    Profile = models.ImageField(upload_to='Testimonial/%Y/')
+    Designation = models.CharField(max_length=50, blank=True) 
+    body = models.TextField()
+    def __str__(self):
+        return self.Name
+
+class Association(models.Model):
+    Logo= models.ImageField(upload_to='Association/%Y/')
+    Link= models.CharField(max_length=100, blank=True)
+    Name = models.CharField(max_length=100, blank=True)
+    def __str__(self):
+        return self.Name
 

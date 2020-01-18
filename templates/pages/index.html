@@ -2,65 +2,68 @@
 	{% load static %}
 	{% block title %} | Home {% endblock %}
 	{% block content %}
+	<div class="waveWrapper waveAnimation">
+		<div class="waveWrapperInner bgTop">
+		<div class="wave waveTop" style='background-image: url("../static/img/jd/wave-top.png")'></div>
+		</div>
+		<div class="waveWrapperInner bgMiddle">
+		<div class="wave waveMiddle" style="background-image: url('../static/img/jd/wave-mid.png')"></div>
+		</div>
+		<div class="waveWrapperInner bgBottom">
+		<div class="wave waveBottom" style="background-image: url('../static/img/jd/wave-bot.png')"></div>
+		</div>
+		</div>
 	<main class="main-wrap">
 		<div class="content-wrap">
-			<section class="p-0"> 
-			
-				<div class="rev_slider_wrapper">
-					<div class="rev_slider" id="slider1" data-version="5.0">
-						<div class="waveWrapper waveAnimation">
-						<div class="waveWrapperInner bgTop">
-						<div class="wave waveTop" style='background-image: url("../static/img/jd/wave-top.png")'></div>
-						</div>
-						<div class="waveWrapperInner bgMiddle">
-						<div class="wave waveMiddle" style="background-image: url('../static/img/jd/wave-mid.png')"></div>
-						</div>
-						<div class="waveWrapperInner bgBottom">
-						<div class="wave waveBottom" style="background-image: url('../static/img/jd/wave-bot.png')"></div>
-						</div>
-						</div>
-					
-						<ul>
-							<li>	
-								<div class="container">
-									<div class="contain">
-										<div class="row">
-											<div class="col-3">
-												<div class="card">
-													<div class="face face1">
-														<div class="content">
-															<img src="{% static 'img/jd/des.png'%}">
-															<h3>Design</h3>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-3  offset-lg-1">
-										<div class="card card-1">
-											<div class="face face1">
-												<div class="content">
-													<img src="{% static 'img/jd/des.png'%}">
-													<h3>Design</h3>
-												</div>
-											</div>					
-										</div>
-										</div>
-										<div class="col-3 offset-lg-1">
-										<div class="card">
-											<div class="face face1">
-												<div class="content">
-													<img src="{% static 'img/jd/des.png'%}">
-													<h3>Design</h3>
-												</div>
-											</div>								
-										</div>
-										</div>
-									</div>
-									</div>
+		<div style="margin-bottom: 400px;">
+		<div class="container">
+			<div class="contain">
+				<div class="row">
+					<div class="col-3">
+						<div class="card">
+							<div class="face face1">
+								<div class="content">
+									<img src="{% static 'img/jd/des.png'%}">
+									<h3>Design</h3>
 								</div>
-							</li>
-						</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-3  offset-lg-1">
+				<div class="card card-1">
+					<div class="face face1">
+						<div class="content">
+							<img src="{% static 'img/jd/des.png'%}">
+							<h3>Design</h3>
+						</div>
+					</div>					
+				</div>
+				</div>
+				<div class="col-3 offset-lg-1">
+				<div class="card">
+					<div class="face face1">
+						<div class="content">
+							<img src="{% static 'img/jd/des.png'%}">
+							<h3>Design</h3>
+						</div>
+					</div>								
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		</div>
+		<h2 class="text-center">Our Association</h2>
+		<div class="container">
+			<section class="projects-slider">
+				{% for associates in associate %}
+				<div class="flickity-slide  company">
+					<img src="{{ associates.Logo.url }}">
+				</div>
+				{% endfor %}
 			</section>
+		</div>
+
 			<section id="services" class="pb-72">
 				<div class="container">
 					<div class="row">
@@ -203,7 +206,36 @@
 							</div>
 						</div>
 			</section>
-		
+			
+
+			<section class="section-testimonials section-testimonials--large-padding bg-overlay">
+				<div class="container">
+
+					<div class="row justify-content-center mb-40">
+						<div class="col-lg-7">
+							<div class="title-row text-center">
+								<h2 class="section-title">Here's What Our Customers Say</h2>
+							</div>
+						</div>
+					</div>
+					<div class="projects-slider">
+						
+						{% for T in testimonial%}
+						<div class="flickity-slide testimonial1">
+							<div class="testimonial mb-md-40">
+								<img src="{{T.Profile.url}}" class="testimonial__img" alt="testimonial_1">
+								<div class="testimonial__body">
+									<p class="testimonial__text">“{{T.body}}”</p>
+									<span class="testimonial__name">{{T.Name}}</span>
+									<span class="testimonial__company">{{T.Designation}}</span>
+								</div>
+							</div>
+						</div>
+						{%endfor%}
+							</div>
+						</div>
+			</section> 
+
 			<section class="section-team">
 						<div class="container">
 							<div class="row">
