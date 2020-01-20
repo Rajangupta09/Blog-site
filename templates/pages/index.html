@@ -15,7 +15,7 @@
 		</div>
 	<main class="main-wrap">
 		<div class="content-wrap">
-		<div style="margin-bottom: 400px;">
+		<div class="main-sec">
 		<div class="container">
 			<div class="contain">
 				<div class="row">
@@ -53,17 +53,7 @@
 			</div>
 		</div>
 		</div>
-		<h2 class="text-center">Our Association</h2>
-		<div class="container">
-			<section class="projects-slider">
-				{% for associates in associate %}
-				<div class="flickity-slide  company">
-					<img src="{{ associates.Logo.url }}">
-				</div>
-				{% endfor %}
-			</section>
-		</div>
-
+	
 			<section id="services" class="pb-72">
 				<div class="container">
 					<div class="row">
@@ -209,8 +199,6 @@
 			
 
 			<section class="section-testimonials section-testimonials--large-padding bg-overlay">
-				<div class="container">
-
 					<div class="row justify-content-center mb-40">
 						<div class="col-lg-7">
 							<div class="title-row text-center">
@@ -233,23 +221,15 @@
 						</div>
 						{%endfor%}
 							</div>
-						</div>
 			</section> 
 
 			<section class="section-team">
 						<div class="container">
-							<div class="row">
-								<div class="col-lg-4">
-									<div class="title-row">
+						
+									<div class="title-row text-center">
 										<h3 class="section-subtitle section-subtitle--line">Meet Our Team</h3>
-										<h2 class="section-title">A Team Of
-										Passionate People</h2>
+										<h2 class="section-title ">A Team Of Passionate People</h2>
 									</div>
-								</div>
-								<div class="col-lg-6 offset-lg-2">
-									<p class="section-description mt-32">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio quod recusandae necessitatibus sit iure quos fugiat perspiciatis fuga maxime quam natus, magnam tempore assumenda enim ut neque omnis corporis commodi?</p>
-								</div>
-							</div>
 		
 							<div class="row">
 								{% for team in teams %}
@@ -275,6 +255,17 @@
 						</div>
 			</section>
 		
+			<h2 class="text-center">Our Association</h2>
+			<div class="container">
+				<section class="projects-slider">
+					{% for associates in associate %}
+					<div class="flickity-slide  company">
+						<img src="{{ associates.Logo.url }}">
+					</div>
+					{% endfor %}
+				</section>
+			</div>
+
 			<section class="section-contact" id="contact">
 			
 				<h2 class="text-center section-title">Contact Us</h2>

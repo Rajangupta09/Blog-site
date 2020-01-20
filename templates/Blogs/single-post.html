@@ -105,14 +105,16 @@
 				</div>
 				<div class="reply"><a class="comment-reply-link" href="#"  data-toggle="collapse" data-target="#reply{{comments.id}}">Reply</a></div>
 				<div id="reply{{comments.id}}" class="collapse">
-					<form method="POST" class="comment-form" novalidate="">
+					<div id="reply">
+						<form method="POST" class="comment-form" novalidate="">
 						{{ comment_form.as_p}}
 						{% csrf_token %}
 						<input type="hidden" name="parent_id" value="{{comments.id}}">
 						<input name="submit" type="submit" class="btn btn--md btn--color" value="Reply">
 						</form> 
 				</div>	
-				  	</div>
+					  </div>
+					  </div>
 						</article>
 								<ul class="children">
 									{% for reply in comments.replies.all %}
